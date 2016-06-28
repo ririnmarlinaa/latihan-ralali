@@ -5,7 +5,7 @@
 	padding-top: 10px;
 }
 
-.container .row{
+.row{
 	text-align: left;
 	border-bottom:solid 2px #000000;
 	padding-top: 10px;
@@ -35,32 +35,40 @@
 }
 .atas{
 	text-align: left;
-	padding-top: 10px;
-	padding-bottom: 0px;
+	padding-top: 2px;
 	border-bottom:solid 2px #000000;
 }
 .kiri{
 	padding-left: 20px;
 	padding-right: 20px;
-	display: inline-block; 
+	display: inline-block;
+
 }
+
+.badan{
+	max-width: 100%;
+}
+
 .kanan{	
 	display: inline-block;
-	text-align: justify;
+	text-align: left;
 	width: 87%;
 }
 .bawah{
-	
-	padding-bottom: 0px;
-	border-bottom:solid 2px #000000;
 	width: 100%;
 	text-align: left;
-
+	
+	
 }
 hr {
    display: block;
    border: 1px;
    border-top: 2px solid;
-   padding: 0; 
    width: 40%;
+ 
+}
+.tengah{
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
