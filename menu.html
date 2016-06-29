@@ -5,7 +5,7 @@
 		<base href="/"></base>
 	</head>
 
-	<body>
+	<body ng-init="init()">
 		<div class="container">
 			<h2>Simple StackExchange</h2>
 				<div class="atas">
@@ -15,36 +15,35 @@
 					<div class="tengah">
 
 						<div class="kiri">
-							<h1>2</h1>
+							<h1>{{idx.vote}}</h1>
 						</div>
 
-						<div class="kanan">
-							<p>When the kingdom's most-wanted bandit, Flynn Rider (Zachary Levi), hides in a convenient tower, he immediately becomes a captive of Rapunzel (Mandy Moore), the spire's longtime resident. Crowned with 70 feet of magical golden hair, she has been locked away for years and desperately wants freedom. The feisty teenager strikes a deal with Flynn, and together they begin a whirlwind adventure.</p>
+						<div class="kanan" >
+							<p>{{idx.description}}</p>
 						</div>
 					</div>
 					<div class="author">
-						Asked by &lt;username&gt; at &lt;datetime&gt;| <a href="#" style="color:orange;">Edit</a> | <a href="#" style="color:red;">Delete</a>
+						Asked by {{idx.author}} at &lt;datetime&gt;| <a href="#" style="color:orange;">Edit</a> | <a href="#" style="color:red;">Delete</a>
 					</div>
 				</div>
 				<div class="atas">
-					<h2>1 Answer</h2>
+					<h2>{{idx.answer}} Answer</h2>
 				</div>
-				<div class="badan">	
+				<div class="badan-2" ng-repeat="x in idx.answers">	
 				<div class="tengah">		
 					<div class="kiri">
-						<h1>2</h1>
+						<h1>{{x.vote}}</h1>
 					</div>
 					<div class="kanan">
-						<p>When the kingdom's most-wanted bandit, Flynn Rider (Zachary Levi), hides in a convenient tower, he immediately becomes a captive of Rapunzel (Mandy Moore), the spire's longtime resident. Crowned with 70 feet of magical golden hair, she has been locked away for years and desperately wants freedom. The feisty teenager strikes a deal with Flynn, and together they begin a whirlwind adventure.</p>
+						<p>{{x.content}}</p>
 					</div>
 					</div>
 					<div class="author">
-						Asked by &lt;username&gt; at &lt;datetime&gt;| <a href="#" style="color:orange;">Edit</a> | <a href="#" style="color:red;">Delete</a>
+						Asked by {{x.author}} at &lt;datetime&gt;| <a href="#" style="color:orange;">Edit</a> | <a href="#" style="color:red;">Delete</a>
 					</div>
 				</div>
 				
 		</div>
-		<hr/>
 	</body>
 		<script type="text/javascript" src="./latihan-ralali/js/angular.js"></script>
 		<script type="text/javascript" src="./latihan-ralali/js/angular-route.js"></script>
