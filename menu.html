@@ -15,10 +15,14 @@
 					<div class="tengah">
 
 						<div class="kiri">
-							<h1>{{idx.vote}}</h1>
+				<h1>
+					<img ng-src="{{idx.status==='up'&&'latihan-ralali/img/kuning-up.png'||'latihan-ralali/img/biru-up.png'}}" style="width:30px; height="30px;" ng-click="up()"></br>
+					{{idx.vote}}</br>
+					<img ng-src="{{idx.status==='down'&&'latihan-ralali/img/kuning-down.png'||'latihan-ralali/img/biru-down.png'}}" style="width:30px; height="30px;" ng-click="down()"></br>
+				</h1>
 						</div>
 
-						<div class="kanan" >
+						<div class="kanan">
 							<p>{{idx.description}}</p>
 						</div>
 					</div>
